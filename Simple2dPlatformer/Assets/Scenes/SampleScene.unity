@@ -423,8 +423,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d80c94281e47f554f98e8b9b2fdc9b39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemy: {fileID: 5516383197414832813, guid: 6314b8b157f7f0a4cb69bab572f78342, type: 3}
-  _coin: {fileID: 5063239139891804489, guid: 83cc9de124a9207449f8d6d726cbbc11, type: 3}
+  _enemies: {fileID: 5516383197414832813, guid: 6314b8b157f7f0a4cb69bab572f78342, type: 3}
+  _coins: {fileID: 5063239139891804489, guid: 83cc9de124a9207449f8d6d726cbbc11, type: 3}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -750,7 +750,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 2.23, y: 0.16000003, z: 0}
   m_MaxChunkCount: 16

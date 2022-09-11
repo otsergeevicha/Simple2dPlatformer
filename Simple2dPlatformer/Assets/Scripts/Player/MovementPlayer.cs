@@ -10,6 +10,8 @@ public class MovementPlayer : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private int _forceJump;
 
+    private readonly StateAnimationPlayer _stateAnimationPlayer = new StateAnimationPlayer();
+    
     private float _horizontal;
 
     private void Awake()
@@ -31,12 +33,12 @@ public class MovementPlayer : MonoBehaviour
         if (_horizontal != 0)
         {
             _spritePlayer.flipX = _horizontal > 0;
-            _animatorPlayer.SetBool("isRun", true);
+            _animatorPlayer.SetBool(_stateAnimationPlayer.IsRun, true);
             transform.Translate(_speed * Time.deltaTime * _horizontal, 0, 0);
         }
         else
         {
-            _animatorPlayer.SetBool("isRun", false);
+            _animatorPlayer.SetBool(_stateAnimationPlayer.IsRun, false);
         }
     }
 
