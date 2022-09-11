@@ -6,12 +6,12 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private Enemies _enemy;
-    [SerializeField] private SpawnCoins _coin;
+    [SerializeField] private EnemyRebirthPoint _enemies;
+    [SerializeField] private CoinRebirthPoint _coins;
 
     private void Awake()
     {
-        Instantiate(_enemy, new Vector3(0, 0, 0), quaternion.identity);
-        Instantiate(_coin, new Vector3(0, 0, 0), quaternion.identity);
+        Instantiate(_enemies, new Vector3(0, 0, 0), quaternion.identity);
+        Instantiate(_coins, new Vector3(0, 0, 0), quaternion.identity);
     }
 }
